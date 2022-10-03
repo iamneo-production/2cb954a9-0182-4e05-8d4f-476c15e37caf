@@ -90,13 +90,13 @@ class RegisterComponent extends Component {
 
                                                     <div className="form-outline mb-4">
                                                         <label className="form-label" for="form2Example11">
-                                                            Your Email
+                                                            Email
                                                         </label>
                                                         <input
                                                             type="email"
                                                             id="form2Example11"
                                                             className="form-control"
-                                                            placeholder="email address"
+                                                            placeholder="Email address"
                                                             value={this.state.email}
                                                             onChange={this.changeEmailHandler}
                                                         />
@@ -131,7 +131,7 @@ class RegisterComponent extends Component {
                                                     </div>
 
                                                     <div class="form-check">
-                                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"
+                                                        <input class="form-check-input" type="checkbox"  id="flexCheckDefault"
                                                             value={this.state.isAdmin}
                                                             onChange={this.checkboxChangeHandler} />
                                                         <label class="form-check-label" for="flexCheckDefault">

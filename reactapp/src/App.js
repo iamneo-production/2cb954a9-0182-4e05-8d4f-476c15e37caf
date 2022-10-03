@@ -1,12 +1,9 @@
 
 import './App.css';
-
-import Register from './components/Register';
-
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import Course from './components/Course';
-import EnrollCourse from './components/EnrollCourse';
+// import EnrollCourse from './components/EnrollCourse';
 import AcademyList from './components/AcademyList'
 import CreateAcademyComponent from './components/CreateAcademyComponent'
 import LoginComponent from './components/LoginComponent';
@@ -16,7 +13,7 @@ import RegisterComponent from './components/RegisterComponent';
 import AdminNavbar from './components/AdminNav';
 import UserNavbar from './components/UserNav';
 import EditAcademyComponent from './components/EditAcademyComponent';
-import Footer from './components/FooterComponent';
+//import Footer from './components/FooterComponent';
 import FooterComponent from './components/FooterComponent';
 import EnrollCourseComponent from './components/EnrollCourseComponent';
 
@@ -53,7 +50,7 @@ function App() {
             ? <EnrollCourseComponent />
             : <LoginComponent />
           } />
-          <Route exact path="/course" element={getLoginStatus === 'true'
+          <Route exact path="/courses" element={getLoginStatus === 'true'
             ? <Course />
             : <LoginComponent />} />
           <Route exact path="/students" element={getLoginStatus === 'true'
